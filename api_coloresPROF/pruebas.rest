@@ -1,0 +1,38 @@
+GET http://localhost:9000/colores
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjM1ODcyYjMyMDEzZmJkMzc1Mjc2YyIsImlhdCI6MTc5NDU4MzUwMH0.vvGGjaaLTyid1oaHu0Wu_ZjIfgeZpaPGhYHtBp8DFxc
+
+###
+
+POST http://localhost:9000/colores/nuevo
+Content-Type:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjM1ODcyYjMyMDEzZmJkMzc1Mjc2YyIsImlhdCI6MTc5NDU4MzUwMH0.vvGGjaaLTyid1oaHu0Wu_ZjIfgeZpaPGhYHtBp8DFxc
+
+{
+    "r" : 255,
+    "g" : 200,
+    "b" :0
+}
+
+###
+
+DELETE http://localhost:9000/colores/borrar/6ad64bba1bd4bf9527f8dd21
+
+###
+
+PATCH http://localhost:9000/colores/actualizar/6ad64bba1bd4bf9527f8dd22
+Content-Type:application/json
+
+{
+    "r" : 99,
+    "b" : 100
+}
+
+###
+
+POST http://localhost:9000/login
+Content-Type:application/json
+
+{
+    "usuario" : "JLZA",
+    "password" : "abc123"
+}
